@@ -55,7 +55,6 @@ class Editor extends React.Component {
         image: this.props.image,
         tagList: this.props.tagList,
       };
-
       const slug = { slug: this.props.itemSlug };
       const promise = this.props.itemSlug
         ? agent.Items.update(Object.assign(item, slug))
