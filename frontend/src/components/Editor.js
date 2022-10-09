@@ -11,7 +11,7 @@ import {
   UPDATE_FIELD_EDITOR,
 } from "../constants/actionTypes";
 
-const IMAGE_PLACEHOLDER = "placeholder.png";
+const IMAGE_PLACEHOLDER = "/placeholder.png";
 
 const mapStateToProps = (state) => ({
   ...state.editor,
@@ -57,7 +57,6 @@ class Editor extends React.Component {
         image: this.props.image || IMAGE_PLACEHOLDER,
         tagList: this.props.tagList,
       };
-
       const slug = { slug: this.props.itemSlug };
       const promise = this.props.itemSlug
         ? agent.Items.update(Object.assign(item, slug))
