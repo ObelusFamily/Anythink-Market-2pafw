@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import agent from "../agent";
 import { connect } from "react-redux";
 import { ITEM_FAVORITED, ITEM_UNFAVORITED } from "../constants/actionTypes";
-import { IMAGE_PLACEHOLDER } from "../constants/imageHelper";
+import { IMAGE_PLACEHOLDER } from "../constants/imageHelpers";
 
 const mapDispatchToProps = (dispatch) => ({
   favorite: (slug) =>

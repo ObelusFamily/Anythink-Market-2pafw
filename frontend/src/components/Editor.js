@@ -10,7 +10,7 @@ import {
   EDITOR_PAGE_UNLOADED,
   UPDATE_FIELD_EDITOR,
 } from "../constants/actionTypes";
-import { IMAGE_PLACEHOLDER } from "../constants/imageHelper";
+import { IMAGE_PLACEHOLDER } from "../constants/imageHelpers";
 
 const mapStateToProps = (state) => ({
   ...state.editor,
