@@ -10,6 +10,7 @@ import {
   EDITOR_PAGE_UNLOADED,
   UPDATE_FIELD_EDITOR,
 } from "../constants/actionTypes";
+import { IMAGE_PLACEHOLDER } from "../constants/imageHelper";
 
 const mapStateToProps = (state) => ({
   ...state.editor,
@@ -52,7 +53,7 @@ class Editor extends React.Component {
       const item = {
         title: this.props.title,
         description: this.props.description,
-        image: this.props.image,
+        image: this.props.image || IMAGE_PLACEHOLDER,
         tagList: this.props.tagList,
       };
 
